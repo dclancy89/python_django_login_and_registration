@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'users/css/style.css' %}">
+</head>
+<body>
+	<div id="pagewrap">
+
+		{% if messages %}
+			<ul class="messages">
+    		{% for message in messages %}
+    			<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    		{% endfor %}
+			</ul>
+		{% endif %}
+
+		<h1>Success! Welcome {{ user.first_name }}</h1>
+
+		<p><a href="/logout" class="button">Log Out</a></p>
+
+	</div>
+
+</body>
+</html>

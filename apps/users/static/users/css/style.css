@@ -1,0 +1,75 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+	background-image:url(../images/concrete-texture.png);
+}
+
+ul.messages {
+	list-style: none;
+}
+
+li.error {
+	color: red;
+}
+
+li.success {
+	color: green;
+}
+
+#pagewrap {
+	max-width: 75rem;
+	width: 100%;
+	display: table;
+	margin: 0 auto;
+	padding-top: 4rem;
+}
+
+.col-1-2 {
+	display: table-cell;
+	width: 50%;
+}
+
+form {
+	max-width: 400px;
+	width: 100%;
+	padding: 2rem;
+}
+
+label {
+	display: inline-block;
+	width: 110px;
+	margin: 0.5rem 0;
+	padding-right: 15px;
+	text-align: right;
+}
+
+input[type="text"], input[type="password"] {
+	display: inline-block;
+	width: calc(100% - 140px);
+	padding: 0.2rem;
+}
+
+.button {
+	display: table;
+	margin: 0.5rem 0 0.5rem auto;
+	background-color: #4286f4;
+	color: #ffffff;
+	border: 2px solid #4286f4;
+	border-radius: 0;
+	padding: 6px 12px;
+	font-size: 16px;
+	transition: all 0.4s ease 0s;
+	text-decoration: none;
+}
+
+.button:hover {
+	background-color: transparent;
+	color: #4286f4;
+	cursor: pointer;
+}
+
+
+
+
+
